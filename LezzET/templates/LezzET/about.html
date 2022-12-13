@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %} LezzET | Hakkımızda {% endblock %}
+
+{% block content %}
+
+<!-- Domain Modal -->
+<div class="modal right fade" id="DomainModal" tabindex="-1" role="dialog" aria-labelledby="DomainModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+  
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+            aria-hidden="true">&times;</span></button>
+  
+        <div class="modal-body">
+          <div class="modal__content">
+            <h2 class="logo"> <span class="fa fa-cutlery"></span> LezzET</h2>
+            <!-- if logo is image enable this   
+            <h2 class="logo">
+              <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+            </h2> -->
+            <p class="mt-md-3 mt-2">Gerçek LezzET'i Bizimle Tadın...</p>
+            <img src="{% static 'images/burger_.png' %}" alt="image" class="img-fluid radius-image mt-4">
+            <div class="widget-social-icons mt-sm-5 mt-4">
+              <h5 class="widget-title">Bizimle İletişime Geçin</h5>
+              <ul class="icon-rounded address">
+                <li>
+                  <p> Caferağa, Mühürdar Cd. No:49/A, 34710 Kadıköy/İstanbul 
+                  <p><span class="fa fa-phone"></span> <a href="tel:+90-546-291-31-57">+90 546 291 31 57</a></p>
+                </li>
+                <li class="mt-2">
+                  <p><span class="fa fa-envelope"></span> <a
+                      href="mailto:lezzet@order.com">lezzet@order.com</a></p>
+                <li class="mt-3">
+                  <p><span class="fa fa-clock-o"></span> <a
+                      href="">Pzt - Cmt | 09:00 - 22:00</a></p>
+                    </a></p>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-social-icons mt-sm-5 mt-4">
+              <h5 class="widget-title">Follow Us</h5>
+              <ul class="icon-rounded">
+                <li><a class="social-link twitter" href="#url" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                <li><a class="social-link linkedin" href="#url" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+                <li><a class="social-link facebook" href="#url" target="_blank"><span class="fa fa-facebook"></span></a></li>
+              </ul>
+            </div>
+  
+  
+          </div>
+        </div>
+      </div>
+      <!-- //modal-content -->
+    </div>
+    <!-- //modal-dialog -->
+  </div>
+  <!-- //Domain modal -->
+  <section class="w3l-breadcrumb">
+      <div class="container">
+          <ul class="breadcrumbs-custom-path">
+              <li><a href="/home">Ana Sayfa</a></li>
+              <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Hakkımızda</li>
+          </ul>
+      </div>
+  </section>
+  <!--  Intro video popup section -->
+  <section class="w3l-about1 py-5" id="intro">
+      <div class="new-block top-bottom py-lg-5 py-md-4">
+          <div class="container">
+              <div class="title-content text-center">
+                  <h6 class="sub-title">BİZ KİMİZ</h6>
+                  <h3 class="title-big">Hakkımızda</h3>
+              </div>
+              <div class="row mt-lg-5 mt-4">
+                  <div class="col-md-3 left-section">
+                  </div>
+                  <div class="col-md-6 middle-section text-center align-self">
+                      <div class="section-width mb-lg-4 py-4">
+                          <h2>Tüm dünyadan en iyi burger fikirleri ve gelenekleri</h2>
+                          <p class="mt-4">Dünya'nın dört bir yanından gelen müşterilerimiz, arkadaş canlısı ortamımız, sıcak ve samimi sohbetlerimiz ve LezzET'li burgerlerimiz sayesinde dünyanın bir numaralı gözde LezzET'lerinden biriyiz...</p>
+                      </div>
+                      <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center">
+                          <span class="video-play-icon">
+                              <span class="fa fa-play"></span>
+                          </span>
+                      </a>
+  
+                      <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                      <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dA0VGEbbw4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                  </div>
+                  <div class="col-md-3 right-section mt-md-0 mt-4">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!--  //Intro video popup section -->
+  <!-- stats -->
+      <section class="w3_stats py-5" id="stats">
+          <div class="container py-lg-5 py-md-4">
+              <div class="title-content text-center">
+                  <h6 class="sub-title">DEĞERLENDİRMELERİMİZ</h6>
+                  <h3 class="title-big">Neden benzersiziz? Bir göz atın...</h3>
+              </div>
+              <div class="w3-stats">
+                  <div class="row">
+                      <div class="col-sm-4 col-4">
+                          <div class="counter">
+                              <span class="fa fa-smile-o"></span>
+                              <div class="timer count-title count-number mt-3" data-to="6155" data-speed="1500"></div>
+                              <p class="count-text ">MEMNUN MÜŞTERİLER</p>
+                          </div>
+                      </div>
+                      <div class="col-sm-4 col-4">
+                          <div class="counter">
+                              <span class="fa fa-users"></span>
+                              <div class="timer count-title count-number mt-3" data-to="971" data-speed="1500"></div>
+                              <p class="count-text ">USTA ŞEF DENEYİMLERİ</p>
+                          </div>
+                      </div>
+                      <div class="col-sm-4 col-4">
+                          <div class="counter">
+                              <span class="fa fa-database"></span>
+                              <div class="timer count-title count-number mt-3" data-to="18" data-speed="1500"></div>
+                              <p class="count-text ">DALLAR</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- //stats -->
+  <!-- features -->
+  <section class="w3l-reasons py-5">
+      <div class="main-w3 py-lg-5 py-md-4">
+          <div class="container">
+              <div class="title-content text-center">
+                  <h6 class="sub-title">BİZ EN İYİSİYİZ</h6>
+                  <h3 class="title-big">Bizi Seçmeniz için 4 Neden</h3>
+              </div>
+              <div class="row main-cont-wthree-fea mt-5 text-center">
+                  <div class="col-lg-3 col-sm-6 grids-feature">
+                      <h4><a href="#feature" class="title-head">Lezzetli Burgerler</a></h4> 
+                      <img src="{% static 'images/burger.png' %}" alt="">                    
+                  </div>
+                  <div class="col-lg-3 col-sm-6 grids-feature mt-sm-0 mt-5">
+                      <h4><a href="#feature" class="title-head">Kaliteli Ürünler</a></h4>
+                      <a href="#url" class="icon"><img src="{% static 'images/fries.png' %}" alt=""></a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 grids-feature mt-lg-0 mt-sm-5 mt-5">
+                      <h4><a href="#feature" class="title-head">Dünyanın En İyi Şefleri</a></h4>
+                      <a href="#url" class="icon"><img src="{% static 'images/drink.png' %}" alt=""></a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 grids-feature mt-lg-0 mt-sm-5 mt-5">
+                      <h4><a href="#feature" class="title-head">En Hızlı Teslimat</a></h4>
+                      <a href="#url" class="icon"><i class="fa fa-motorcycle fa-2x"></i> </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- //features -->
+
+{% endblock %}

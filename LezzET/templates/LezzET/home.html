@@ -1,0 +1,249 @@
+{% extends "base.html" %}
+
+
+
+{% load static %}
+
+{% block title %}  LezzET | Ana Sayfa  {% endblock %}
+
+{% block content %}
+
+
+
+
+<!-- Domain Modal -->
+<div class="modal right fade" id="DomainModal" tabindex="-1" role="dialog" aria-labelledby="DomainModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+  
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+            aria-hidden="true">&times;</span></button>
+  
+        <div class="modal-body">
+          <div class="modal__content">
+            <h2 class="logo"> <span class="fa fa-cutlery"></span> LezzET</h2>
+            <!-- if logo is image enable this   
+            <h2 class="logo">
+              <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+            </h2> -->
+            <p class="mt-md-3 mt-2">Gerçek LezzET'i Bizimle Tadın...</p>
+            <img src= "{% static 'images/burger_.png' %}" alt="image" class="img-fluid radius-image mt-4">
+            <div class="widget-social-icons mt-sm-5 mt-4">
+              <h5 class="widget-title">Bizimle İletişime Geçin</h5>
+              <ul class="icon-rounded address">
+                <li>
+                  <p> Caferağa, Mühürdar Cd. No:49/A, 34710 Kadıköy/İstanbul</p>
+                </li>
+                <li class="mt-3">
+                  <p><span class="fa fa-phone"></span> <a href="tel:+90-546-291-31-57">+90 546 291 31 57</a></p>
+                </li>
+                <li class="mt-2">
+                  <p><span class="fa fa-envelope"></span> <a
+                      href="mailto:lezzet@order.com">lezzet@order.com</a></p>
+                </li>
+                <li class="top_li1 mt-2">
+                  <p><span class="fa fa-clock-o"></span> <a href="#url">Pzt - Cmt | 09:00 - 22:00 
+                    </a></p>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-social-icons mt-sm-5 mt-4">
+              <h5 class="widget-title">Bizi Takip Edin</h5>
+              <ul class="icon-rounded">
+                <li><a class="social-link twitter" href="#url" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                <li><a class="social-link linkedin" href="#url" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+                <li><a class="social-link facebook" href="#url" target="_blank"><span class="fa fa-facebook"></span></a></li>
+              </ul>
+            </div>
+  
+  
+          </div>
+        </div>
+      </div>
+      <!-- //modal-content -->
+    </div>
+    <!-- //modal-dialog -->
+  </div>
+  <!-- //Domain modal -->
+  <section class="w3l-banner" id="banner">
+      <div class="new-block py-5">
+          <div class="container">
+              <div class="row middle-section">
+                  <div class="col-lg-7 section-width align-self">
+                      <h5>Her Gün LezzET' den Yiyin</h5>
+                      <h2>BURGER SEVGİNİZİ BİZİMLE YAŞAYIN</h2> 
+                      <a href="#url" class="btn btn-secondary btn-outline-style mt-md-5 mt-4"> 
+                          <span class="fa fa-shopping-cart mr-2"></span> Online Sipariş</a>
+                  </div>
+                  <div class="col-lg-5 history-info mt-lg-5 mt-5 pt-lg-0 pt-md-4">
+                      <img src= "{% static 'images/burger_.png' %}" class="img-fluid py-5" alt="image">
+                      <div class="cost" >
+                          <h5>Sadece</h5>
+                          <h3>₺39.99</h3>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  </section>
+  <!-- iphone home block -->
+  <section class="w3l-about py-5">
+      <div class="container py-lg-5 py-md-4">
+          <div class="row">
+              <div class="col-lg-6">
+                  <h3>Şehrinizdeki En İyi Burgeri Yapıyoruz</h3>
+                  <h5 class="mt-lg-3 mt-2">LezzET'in farkı %100 katkısız ürünlerden yapılan burgerleri oldu.</h5>
+                  <p class="mt-sm-4 mt-3 mb-sm-0 mb-2"> LezzET müşterilerinden aldığı talepler ile kalitesini hiç bozmadan büyüyebilen nadir burger üreticilerindendir. İlerleyen yıllarda gücünü müşterilerinin sadakat ve övgülerinden alarak üretim bandını genişletti.</p>
+                  <a href="{% url 'about' %}" class="btn-style btn-primary btn mt-lg-5 mt-4">Hakkımızda daha fazla bilgi edinin</a>
+              </div>
+              <div class="col-lg-6 mt-lg-0 mt-5">
+                  <div class="row">
+                      <div class="col-6 features-with-17-left1">
+                          <a class="icon"><img src= "{% static 'images/fries.png' %}" alt="" /></a>
+                          <h4><a>Doğal malzemelerle pişmiş doğru yemek</a></h4>
+                      </div>
+                      <div class="col-6 features-with-17-left1">
+                          <a class="icon"><img src= "{% static 'images/burger.png' %}" alt="" /></a>
+                          <h4><a>Doğal en kaliteli ürünlerin kullanımı</a></h4>
+                      </div>
+                      <div class="col-6 features-with-17-left1 mt-5 pt-lg-3">
+                          <a class="icon"><img src= "{% static 'images/drink.png' %}" alt="" /></a>
+                          <h4><a> Dünyanın en iyi Şefleri ve Beslenme Uzmanı!</a></h4>
+                      </div>
+                      <div class="col-6 features-with-17-left1 mt-5 pt-lg-3">
+                          <a href="#url" class="icon"><i class="fa fa-motorcycle fa-2x"></i> </a>
+                          <h4><a>Kapınıza kadar en hızlı teslimat</a></h4>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section class="w3l-portfolio-8 py-5">
+      <div class="portfolio-main py-lg-5 py-md-4">
+          <div class="container">
+              <div class="title-content text-center">
+                  <h6 class="sub-title">Galeri</h6>
+                  <h3 class="title-big">Burger Galerisi</h3>
+              </div>
+              <div class="row galler-top mt-lg-5 mt-4">
+                  <div class="col-md-3 col-6 protfolio-item hover14 align-self">
+                      <a href="{% static 'images/g5.jpg' %}" data-lightbox="example-set"
+                      data-title="">
+                              <figure>
+                                  <img src= "{% static 'images/g5.jpg' %}" alt="product" class="img-fluid radius-image">
+                              </figure>
+                      </a>
+                  </div>
+                  <div class="col-md-3 col-6 protfolio-item hover14">
+                      <a href="{% static 'images/g1.jpg' %}" data-lightbox="example-set" class="mb-4"
+                      data-title="">
+                              <figure>
+                                  <img src= "{% static 'images/g1.jpg' %}" alt="product" class="img-fluid radius-image">
+                              </figure>
+                      </a>
+                      <a href="{% static 'images/g2.jpg' %}" data-lightbox="example-set"
+                      data-title="">
+                              <figure>
+                                  <img src= "{% static 'images/g2.jpg' %}" alt="product" class="img-fluid radius-image">
+                              </figure>
+                      </a>
+                  </div>
+                  <div class="col-md-3 col-6 protfolio-item hover14">
+                      <a href="{% static 'images/g3.jpg' %}" data-lightbox="example-set" class="mb-4"
+                      data-title="">
+                              <figure>
+                                  <img src= "{% static 'images/g3.jpg' %}" alt="product" class="img-fluid radius-image">
+                              </figure>
+                      </a>
+                      <a href="{% static 'images/g6.jpg' %}" data-lightbox="example-set"
+                      data-title="">
+                              <figure>
+                                  <img src= "{% static 'images/g6.jpg' %}" alt="product" class="img-fluid radius-image">
+                              </figure>
+                      </a>
+                  </div>
+                  <div class="col-md-3 col-6 protfolio-item hover14 align-self">
+                      <a href="{% static 'images/g4.jpg' %}" data-lightbox="example-set"
+                      data-title="">
+                              <figure>
+                                  <img src= "{% static 'images/g4.jpg' %}" alt="product" class="img-fluid radius-image">
+                              </figure>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section class="w3l-food" id="food">
+      <div class="foods1 py-5">
+          <div class="container py-lg-5 py-md-4">
+              <div class="title-content text-center">
+                  <h6 class="sub-title">SPESİYALLERİMİZ</h6>
+                  <h3 class="title-big">LezzET'li Burgerlerimiz</h3>
+              </div>
+              <div class="foods1-content mt-lg-5 mt-4 mb-sm-0 mb-4">
+                  <div class="owl-carousel owl-theme text-center">
+                      <div class="item">
+                          <div class="d-grid food-info">
+                              <div class="column">
+                                  <h4 class="name-pos"><a href="#url">Texas Burger</a></h4>
+                                  <p>Whopper et, füme et, cheddar peynir, barbekü sos ve çıtır kaplamalı soğan</p>
+                                  <h5>₺49.99</h5>
+                                  <a href="#url" class="btn-style btn-primary btn mt-4">Online Satış</a>
+                                  <a href="#url"><img src= "{% static 'images/b1.png' %}" alt="" class="img-fluid radius-image mt-4"/></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="item">
+                          <div class="d-grid food-info">
+                              <div class="column">
+                                  <h4 class="name-pos"><a href="#url">Etli Master Burger</a></h4>
+                                  <p>Whopper et, susamlı sandviç ekmeği, mantar sos, mozzarella peynir, çıtır soğan ve mayonez </p>
+                                  <h5>₺39.99</h5>
+                                  <a href="#url" class="btn-style btn-primary btn mt-4">Online Satış</a>
+                                  <a href="#url"><img src= "{% static 'images/b2.png' %}" alt="" class="img-fluid radius-image mt-4"/></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="item">
+                          <div class="d-grid food-info">
+                              <div class="column">
+                                  <h4 class="name-pos"><a href="#url">Mangalda Tavuk</a></h4>
+                                  <p> Tavuk et, mısır ekmeği, cheddar peynir, domates, barbekü sos, mayonez ve marul</p>
+                                  <h5>₺34.99</h5>
+                                  <a href="#url" class="btn-style btn-primary btn mt-4">Online Satış</a>
+                                  <a href="#url"><img src= "{% static 'images/b3.png' %}" alt="" class="img-fluid radius-image mt-4"/></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="item">
+                          <div class="d-grid food-info">
+                              <div class="column">
+                                  <h4 class="name-pos"><a href="#url">Double Köfteburger</a></h4>
+                                  <p> 2 adet Köfteburger et, cheddar peynir, salatalık turşusu, ketçap ve marul</p>
+                                  <h5>₺29.99</h5>
+                                  <a href="#url" class="btn-style btn-primary btn mt-4">Online Satış</a>
+                                  <a href="#url"><img src= "{% static 'images/b4.png' %}" alt="" class="img-fluid radius-image mt-4"/></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="item">
+                          <div class="d-grid food-info">
+                              <div class="column">
+                                  <h4 class="name-pos"><a href="#url">Etli Brioche</a></h4>
+                                  <p>Whopper et, brioche ekmek, cheddar peynir, barbekü sos, marul ve çıtır soğan</p>
+                                  <h5>₺39.99</h5>
+                                  <a href="#url" class="btn-style btn-primary btn mt-4">Online Satış</a>
+                                  <a href="#url"><img src= "{% static 'images/b5.png' %}" alt="" class="img-fluid radius-image mt-4"/></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  
+
+{% endblock %}

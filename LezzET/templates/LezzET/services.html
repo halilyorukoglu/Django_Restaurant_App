@@ -1,0 +1,348 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %} LezzET | Ürünler {% endblock %}
+
+{% block content %}
+
+<!-- Domain Modal -->
+<div class="modal right fade" id="DomainModal" tabindex="-1" role="dialog" aria-labelledby="DomainModalLabel2">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+  
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+			aria-hidden="true">&times;</span></button>
+  
+		<div class="modal-body">
+		  <div class="modal__content">
+			<h2 class="logo"> <span class="fa fa-cutlery"></span> LezzET</h2>
+			<!-- if logo is image enable this   
+			<h2 class="logo">
+			  <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+			</h2> -->
+			<p class="mt-md-3 mt-2">Gerçek LezzET'i Bizimle Tadın...</p>
+			<img src="{% static 'images/burger_.png' %}" alt="image" class="img-fluid radius-image mt-4">
+			<div class="widget-social-icons mt-sm-5 mt-4">
+			  <h5 class="widget-title">Bizimle İletişime Geçin</h5>
+			  <ul class="icon-rounded address">
+				<li>
+				  <p> Caferağa, Mühürdar Cd. No:49/A, 34710 Kadıköy/İstanbul</p>
+				</li>
+				<li class="mt-3">
+				  <p><span class="fa fa-phone"></span> <a href="tel:+90-546-291-31-57">+90 546 291 31 57</a></p>
+				</li>
+				<li class="mt-2">
+				  <p><span class="fa fa-envelope"></span> <a
+					  href="mailto:lezzet@order.com">lezzet@order.com</a></p>
+				</li>
+				<li class="top_li1 mt-2">
+				  <p><span class="fa fa-clock-o"></span> <a href="#url">Pzt - Cmt | 09:00 - 22:00
+					</a></p>
+				</li>
+			  </ul>
+			</div>
+			<div class="widget-social-icons mt-sm-5 mt-4">
+			  <h5 class="widget-title">Bizi Takip Edin</h5>
+			  <ul class="icon-rounded">
+				<li><a class="social-link twitter" href="#url" target="_blank"><span class="fa fa-twitter"></span></a></li>
+				<li><a class="social-link linkedin" href="#url" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+				<li><a class="social-link facebook" href="#url" target="_blank"><span class="fa fa-facebook"></span></a></li>
+			  </ul>
+			</div>
+  
+  
+		  </div>
+		</div>
+	  </div>
+	  <!-- //modal-content -->
+	</div>
+	<!-- //modal-dialog -->
+  </div>
+  <!-- //Domain modal -->
+  <section class="w3l-breadcrumb">
+	  <div class="container">
+		  <ul class="breadcrumbs-custom-path">
+			  <li><a href="/home">Ana Sayfa</a></li>
+			  <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Ürünler</li>
+		  </ul>
+	  </div>
+  </section>
+  <!-- menu -->
+	  <div class="agileits-services  py-5" id="menu">
+		  <div class="container py-md-5">
+			  <div class="title-content text-center">
+				  <h6 class="sub-title">SPESİYAL MENÜLERİMİZ</h6>
+				  <h3 class="title-big">Sizin İçin Seçtiğimiz Menülerimiz</h3>
+			  </div>
+			  <div class="pt-lg-5 pt-4">
+				  <div class="row menu-body">
+					  <!-- Section starts: Appetizers -->
+					  <div class="col-lg-6 menu-section pr-lg-5">
+						  <h3 class="menu-section-title">Burgerler</h3>
+						  <!-- Item starts -->
+						  <div class="menu-item">
+							  <div class="row border-dot no-gutters">
+								  <div class="col-8 menu-item-name">
+									  <h6>Texas Burger</h6>
+								  </div>
+								  <div class="col-4 menu-item-price text-right">
+									  <h6>₺49.99</h6>
+								  </div>
+							  </div>
+							  <div class="menu-item-description">
+								  <p>Whopper et, füme et, cheddar peynir, barbekü sos ve çıtır kaplamalı soğanları ile nefis bir seçim. Enfes patates kızartması ve içeceğiyle birlikte Texas Burger Menü keyfini istediğin gibi yaşa!</p>
+							  </div>
+						  </div>
+						  <!-- Item ends -->
+						  <!-- Item starts -->
+						  <div class="menu-item">
+							  <div class="row border-dot no-gutters">
+								  <div class="col-8 menu-item-name">
+									  <h6>Etli Master Burger</h6>
+								  </div>
+								  <div class="col-4 menu-item-price text-right">
+									  <h6>₺39.99</h6>
+								  </div>
+							  </div>
+							  <div class="menu-item-description">
+								  <p>Whopper et, nefis mantar sos, mozzarella peynir, çıtır soğan ve mayonezi ile mantar sever gurmelerin gözdesi. Enfes patates kızartması ve içeceğiyle birlikte Etli Master Burger Menü keyfini istediğin gibi yaşa!</p>
+							  </div>
+						  </div>
+						  <!-- Item ends -->
+						  <!-- Item starts -->
+						  <div class="menu-item">
+							  <div class="row border-dot no-gutters">
+								  <div class="col-8 menu-item-name">
+									  <h6>Mangalda Tavuk</h6>
+								  </div>
+								  <div class="col-4 menu-item-price text-right">
+									  <h6>₺34.99</h6>
+								  </div>
+							  </div>
+							  <div class="menu-item-description">
+								  <p>Tavuk et, mısır irmiği ile süslemeli özel ekmek, cheddar peynir, domates, barbekü sos, mayonez ve marul. Enfes patates kızartması ve içeceğiyle birlikte Mangalda Tavuk Menü keyfini istediğin gibi yaşa!</p>
+							  </div>
+						  </div>
+						  <!-- Item ends -->
+						  <!-- Item starts -->
+						  <div class="menu-item">
+							  <div class="row border-dot no-gutters">
+								  <div class="col-8 menu-item-name">
+									  <h6>Double Köfteburger</h6>
+								  </div>
+								  <div class="col-4 menu-item-price text-right">
+									  <h6>₺29.99</h6>
+								  </div>
+							  </div>
+							  <div class="menu-item-description">
+								  <p>Anne tarifi ile hazırlanan 2 adet Köfteburger et, cheddar peynir, susamlı sandviç ekmek, salatalık turşusu, ketçap, mayonez. Enfes patates kızartması ve içeceğiyle birlikte Double Köfteburger Menü keyfini istediğin gibi yaşa!</p>
+							  </div>
+						  </div>
+						  <!-- Item ends -->
+					  </div>
+					  <!-- Section ends: Appetizers -->
+  
+					  <!-- Section starts: Appetizers -->
+					  <div class="col-lg-6 menu-section pl-lg-5">
+						  <h3 class="menu-section-title">Tavuk Ürünleri</h3>
+						  <!-- Item starts -->
+						  <div class="menu-item">
+							  <div class="row border-dot no-gutters">
+								  <div class="col-8 menu-item-name">
+									  <h6>Kemiksiz Kutu</h6>
+								  </div>
+								  <div class="col-4 menu-item-price text-right">
+									  <h6>₺39.99</h6>
+								  </div>
+							  </div>
+							  <div class="menu-item-description">
+								  <p>Beş adet kemiksiz çıtır tavuk, dört adet hot shots, biscuit, gravy sos (Geçici süreliğine Gravy tedarik edilemeyebilir yerine 5’li sos gönderilecektir), orta boy patates ve içeceğiyle birlikte birlikte kemiksiz kutu tavuk keyfini istediğin gibi yaşa! </p>
+							  </div>
+						  </div>
+						  <!-- Item ends -->
+						  <!-- Item starts -->
+						  <div class="menu-item">
+							  <div class="row border-dot no-gutters">
+								  <div class="col-8 menu-item-name">
+									  <h6>Acılı Kanat</h6>
+								  </div>
+								  <div class="col-4 menu-item-price text-right">
+									  <h6>₺39.99</h6>
+								  </div>
+							  </div>
+							  <div class="menu-item-description">
+								  <p>Beş adet acılı kanat, orta boy patates kızartması, içecek</p>
+							  </div>
+						  </div>
+						  <!-- Item ends -->
+						  <!-- Item starts -->
+						  <div class="menu-item">
+							  <div class="row border-dot no-gutters">
+								  <div class="col-8 menu-item-name">
+									  <h6>LezzET Chicken</h6>
+								  </div>
+								  <div class="col-4 menu-item-price text-right">
+									  <h6>₺49.99</h6>
+								  </div>
+							  </div>
+							  <div class="menu-item-description">
+								  <p>Yirmi adet LezzET chicken, orta boy patates kızartması, içecek</p>
+							  </div>
+						  </div>
+						  <!-- Item ends -->
+						  <!-- Item starts -->
+						  <div class="menu-item">
+							  <div class="row border-dot no-gutters">
+								  <div class="col-8 menu-item-name">
+									  <h6>Golden But</h6>
+								  </div>
+								  <div class="col-4 menu-item-price text-right">
+									  <h6>₺34.99</h6>
+								  </div>
+							  </div>
+							  <div class="menu-item-description">
+								  <p>İki adet golden but, orta boy patates kızartması, içecek</p>
+							  </div>
+						  </div>
+						  <!-- Item ends -->
+					  </div>
+					  <!-- Section ends: Appetizers -->
+					  
+					  <!-- Section starts: Drinks -->
+					  <div class="col-lg-6 menu-section pr-lg-5">
+						  <h3 class="menu-section-title">Tatlılar</h3>
+						  <!-- Item starts -->
+						  <div class="menu-item">
+							  <div class="row border-dot no-gutters">
+								  <div class="col-8 menu-item-name">
+									  <h6>Tavuk Göğsü</h6>
+								  </div>
+								  <div class="col-4 menu-item-price text-right">
+									  <h6>₺24</h6>
+								  </div>
+							  </div>
+							  <div class="menu-item-description">
+								  <p>Günlük çiftlik sütü, sofra şekeri ve tavuğun göğüs eti ile hazırlanan geleneksel lezzet</p>
+							  </div>
+						  </div>
+						  <!-- Item ends -->
+						  <!-- Item starts -->
+						  <div class="menu-item">
+							  <div class="row border-dot no-gutters">
+								  <div class="col-8 menu-item-name">
+									  <h6>Fırın Sütlaç</h6>
+								  </div>
+								  <div class="col-4 menu-item-price text-right">
+									  <h6>₺25</h6>
+								  </div>
+							  </div>
+							  <div class="menu-item-description">
+								  <p>Günlük çiftlik sütü, sofra şekeri ve pirinç ile hazırlanan üstünün hafifçe kızarması için fırınlanan vazgeçilmez tatlı</p>
+							  </div>
+						  </div>
+						  <!-- Item ends -->
+						  <!-- Item starts -->
+						  <div class="menu-item">
+							  <div class="row border-dot no-gutters">
+								  <div class="col-8 menu-item-name">
+									  <h6>Supangle</h6>
+								  </div>
+								  <div class="col-4 menu-item-price text-right">
+									  <h6>₺30</h6>
+								  </div>
+							  </div>
+							  <div class="menu-item-description">
+								  <p>Özel çikolata ve çikolatalı kek ile hazırlanan Fransız lezzetini doyasıya yaşayın</p>
+							  </div>
+						  </div>
+						  <!-- Item ends -->
+						  <!-- Item starts -->
+						  <div class="menu-item">
+							  <div class="row border-dot no-gutters">
+								  <div class="col-8 menu-item-name">
+									  <h6>Profiterol</h6>
+								  </div>
+								  <div class="col-4 menu-item-price text-right">
+									  <h6>₺35</h6>
+								  </div>
+							  </div>
+							  <div class="menu-item-description">
+								  <p>Orijinal tarifine sadık kalınarak, bol kakaolu özel çikolata sosu ile hazırlanan enfes lezzet</p>
+							  </div>
+						  </div>
+						  <!-- Item ends -->
+					  </div>
+					  <!-- Section ends: Drinks -->
+  
+					  <!-- Section starts: Drinks -->
+					  <div class="col-lg-6 menu-section pl-lg-5">
+						  <h3 class="menu-section-title">İçecekler</h3>
+						  <!-- Item starts -->
+						  <div class="menu-item">
+							  <div class="row border-dot no-gutters">
+								  <div class="col-8 menu-item-name">
+									  <h6>Filtre Kahve</h6>
+								  </div>
+								  <div class="col-4 menu-item-price text-right">
+									  <h6>₺25</h6>
+								  </div>
+							  </div>
+							  <div class="menu-item-description">
+								  <p>Yoğun kahve aromasının taze sütle uyumu LezzET özeniyle sizin için biraraya geldi</p>
+							  </div>
+						  </div>
+						  <!-- Item ends -->
+						  <!-- Item starts -->
+						  <div class="menu-item">
+							  <div class="row border-dot no-gutters">
+								  <div class="col-8 menu-item-name">
+									  <h6>Ev Yapımı Limonata</h6>
+								  </div>
+								  <div class="col-4 menu-item-price text-right">
+									  <h6>₺20</h6>
+								  </div>
+							  </div>
+							  <div class="menu-item-description">
+								  <p>Günlük taze meyvelerle hazırlanan ev yapımı limonata LezzET'i</p>
+							  </div>
+						  </div>
+						  <!-- Item ends -->
+						  <!-- Item starts -->
+						  <div class="menu-item">
+							  <div class="row border-dot no-gutters">
+								  <div class="col-8 menu-item-name">
+									  <h6>Latte</h6>
+								  </div>
+								  <div class="col-4 menu-item-price text-right">
+									  <h6>₺22</h6>
+								  </div>
+							  </div>
+							  <div class="menu-item-description">
+								  <p>Lattemiz sofistike espresso ve kremalı buharla ısıltılmış sütün lezzetli bir harmanıdır</p>
+							  </div>
+						  </div>
+						  <!-- Item ends -->
+						  <!-- Item starts -->
+						  <div class="menu-item">
+							  <div class="row border-dot no-gutters">
+								  <div class="col-8 menu-item-name">
+									  <h6>Iced Tea</h6>
+								  </div>
+								  <div class="col-4 menu-item-price text-right">
+									  <h6>₺25</h6>
+								  </div>
+							  </div>
+							  <div class="menu-item-description">
+								  <p>Klasik yaz içeceğinin ferahlatıcı özelliği! LezzET'in Buzlu Çayı, eşsiz çayımız buz ile soğutularak yapılır</p>
+							  </div>
+						  </div>
+						  <!-- Item ends -->
+					  </div>
+					  <!-- Section ends: Drinks -->
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+		
+{% endblock %}
